@@ -21,7 +21,7 @@ def divide (num1,num2):
     else:
         return "Error ! Division by zero!"
 
-def calulator():
+def calculator():
     while True:
         print("1. Add")
         print("2. Subtract")
@@ -38,5 +38,13 @@ def calulator():
         num2 = float(input("Enter your second number: "))
 
         if choice == '1':
-            print("{num1}+{num2} = {add(num1,num2)}")
+            print(add(num1,num2))
+        if choice == '2':
+            print(subtract(num1,num2))
+        if choice == '3':
+            print(multiply(num1,num2))
+        if choice == '4':
+            print(divide(num1,num2))
 
+if __name__ == "__main__":
+    calculator()
